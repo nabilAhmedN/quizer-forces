@@ -6,12 +6,14 @@ import Topics from './components/Topics/Topics';
 import Statistic from './components/Statistic/Statistic';
 import Blog from './components/Blog/Blog';
 import MCQ from './components/MCQ/MCQ';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <ErrorPage/>,
       children: [
 
         {

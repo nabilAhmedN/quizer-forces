@@ -5,7 +5,7 @@ Using the Quizer Forces as assistance. Everything turns out to be really straigh
 
 
 ## Live Link
-Hosted in Netlify -> [Quizer Forces]()
+Hosted in Netlify -> [Quizer Forces](https://app.netlify.com/sites/quizer-forces-7bc23c/overview)
 
 ## Project Description
 -> Quizer Forces is a quiz website <br/>

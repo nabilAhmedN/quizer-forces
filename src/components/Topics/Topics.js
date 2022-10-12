@@ -12,7 +12,7 @@ const Topics = () => {
 
     return (
         
-        <div>
+        <div className=''>
             <Header/>
             <hr />
             <h2 className='text-2xl font-bold text-center text-black mt-5 '> Quiz Topic </h2>

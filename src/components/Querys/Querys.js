@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid';
 
+
 const Querys = ({query}) => {
     const {question, options, correctAnswer} = query;
     const [msg, setMsg] = useState();

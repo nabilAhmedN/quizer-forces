@@ -10,5 +10,5 @@ Hosted in Netlify -> [Quizer Forces]()
 ## Project Description
 -> Quizer Forces is a quiz website <br/>
 -> It is build by ReactJs <br/>
--> Here I use Tailwind Css, Recharts, React Router <br/>
--> Site is responsive for large, medium, mobile device <br/>
+-> Here I use Tailwind Css, Heroicons, Recharts, React Router <br/>
+-> Site is responsive for large, mobile device <br/>

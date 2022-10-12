@@ -15,16 +15,25 @@ const Querys = ({query, index}) => {
         event.preventDefault();
         console.log( event.target.value);
         if(event.target.value === correctAnswer){
-            // alert('Right Answer');
             toast.success('Right Answer',{
+                position: "top-right",
                 autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
                 theme: "dark",
-            })
+                })
         }
         else{
-            // alert('Wrong Answer');
             toast.error('Wrong Answer',{
                 autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
                 theme: "dark",
             })
         }
@@ -36,6 +45,11 @@ const Querys = ({query, index}) => {
         const item = JSON.stringify(correctAnswer);
         toast.success(showMsg + item,{
             autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
             theme: "dark",
         })
 

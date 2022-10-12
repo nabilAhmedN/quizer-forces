@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='bg-indigo-300 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <Link
-            to='/home'
+            to='/'
             className='inline-flex items-center'
           >
             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
@@ -17,14 +17,7 @@ const Navbar = () => {
             </span>
           </Link>
           <ul className='items-center hidden space-x-8 lg:flex'>
-            <li>
-              <Link
-                to='/home'
-                className='font-medium tracking-wide text-gray-700 transition-colors duration-300 hover:text-slate-50 '
-              >
-                Home
-              </Link>
-            </li>
+            
             <li>
               <Link
                 to='/topics'
@@ -52,8 +45,8 @@ const Navbar = () => {
           </ul>
           <div className='lg:hidden z-10'>
             <button
-              aria-label='Open Menu'
-              title='Open Menu'
+              // aria-label='Open Menu'
+              // title='Open Menu'
               className='p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50'
               onClick={() => setNavOpen(true)}
             >
@@ -88,8 +81,8 @@ const Navbar = () => {
                     </div>
                     <div>
                       <button
-                        aria-label='Close Menu'
-                        title='Close Menu'
+                        // aria-label='Close Menu'
+                        // title='Close Menu'
                         className='p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
                         onClick={() => setNavOpen(false)}
                       >
@@ -104,14 +97,7 @@ const Navbar = () => {
                   </div>
                   <nav>
                     <ul className='space-y-4'>
-                        <li>
-                            <Link
-                            to='/home'
-                            className='font-medium tracking-wide text-gray-700 '
-                            >
-                            Home
-                            </Link>
-                        </li>
+                        
                         <li>
                             <Link
                             to='/topics'

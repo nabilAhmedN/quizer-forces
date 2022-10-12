@@ -10,9 +10,10 @@ const MCQ = () => {
         <div>
             <h2 className='text-3xl font-bold text-center mt-5'>Topic Name {name}</h2>
             {
-                questions.map(query => <Querys
+                questions.map((query, index) => <Querys 
                     key={query.id} 
                     query={query}
+                    index={index}
                 />)
             }
         </div>

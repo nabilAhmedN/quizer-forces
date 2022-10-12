@@ -25,7 +25,7 @@ const Blog = () => {
                     <span className="block text-xs font-extrabold tracking-widest uppercase dark:text-violet-400">How does useRef work?
             </span>
                 </div>
-                <p className="dark:text-gray-100">useRef returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its .current property.</p>
+                <p className="dark:text-gray-100">useRef returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). The returned object will persist for the full lifetime of the component. Essentially, useRef is like a “box” that can hold a mutable value in its current property.</p>
             </div>
         </div>
         </div>

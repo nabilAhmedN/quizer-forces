@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
-const Querys = ({query}) => {
+const Querys = ({query, index}) => {
     const {question, options, correctAnswer} = query;
     const [msg, setMsg] = useState();
 
@@ -13,25 +15,36 @@ const Querys = ({query}) => {
         event.preventDefault();
         console.log( event.target.value);
         if(event.target.value === correctAnswer){
-            alert('Right Answer');
+            // alert('Right Answer');
+            toast.success('Right Answer',{
+                autoClose: 1000,
+                theme: "dark",
+            })
         }
         else{
-            alert('Wrong Answer');
+            // alert('Wrong Answer');
+            toast.error('Wrong Answer',{
+                autoClose: 1000,
+                theme: "dark",
+            })
         }
     }
     
      
      const rightAnswer =() =>{
-        const msg = 'Right Ans is :'
-        const value = JSON.stringify(correctAnswer);
-        alert(msg+value);
+        const showMsg = 'Right Ans is: '
+        const item = JSON.stringify(correctAnswer);
+        toast.success(showMsg + item,{
+            autoClose: 1000,
+            theme: "dark",
+        })
 
      }
     return (
         <div>
             <div className='mt-10 mx-5 md:mx-10 lg:mx-[200px] border p-10 bg-indigo-400 rounded-lg ' >
             <div className='flex justify-between'>
-                <h1 className='mb-10 mt-5 font-bold text-xl text-white'>Quiz {question}</h1>
+                <h1 className='mb-10 mt-5 font-bold text-xl text-white'>Que {index+1}: {question.slice(3,-4)}</h1>
                 <button type='btn' className='' onClick={rightAnswer}><EyeIcon className='w-7 h-7 text-white'></EyeIcon></button>
             </div>
             <div>
@@ -64,6 +77,7 @@ const Querys = ({query}) => {
 
             </div>
         </div>
+        <ToastContainer />
         </div>
     );
 };
